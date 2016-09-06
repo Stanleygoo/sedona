@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Богдан Васкан](https://up.htmlacademy.ru/adaptive/8/user/126100).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Петров](https://htmlacademy.ru/profile/id42390).
 
 ---
 
