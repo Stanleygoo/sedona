@@ -1,0 +1,19 @@
+.search-hotel__title {
+  font-size: 21px;
+  line-height: 26px;
+}
+.search-hotel__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.search-hotel__link {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+.search-hotel {
+    outline: red 1px solid;
+    margin-bottom: 50px;
+}

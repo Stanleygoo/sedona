@@ -1,0 +1,27 @@
+legend {
+  font-size: 18px;
+  line-height: 26px;
+  outline: 1px red solid;
+}
+.feedback-form input {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #f2f2f2;
+  text-transform: capitalize;
+}
+.feedback-form label{
+  padding- : 20px;
+}
+.feedback-form__textarea {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  margin-bottom: 50px;
+  outline: 1px red solid;
+}
+.feedback-form__btn {
+  margin-bottom: 75px;
+}

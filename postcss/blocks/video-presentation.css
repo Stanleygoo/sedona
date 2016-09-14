@@ -1,0 +1,9 @@
+.video-presentation__title {
+  font-size: 18px;
+  line-height: 26px;
+}
+.video-presentation__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
