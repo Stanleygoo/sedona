@@ -1,5 +1,7 @@
 @import "global/fonts.css";
+@import "global/normalize.css";
 @import "global/global-styles.css";
+@import "global/variables.css";
 @import "blocks/content-header.css";
 @import "blocks/copyright.css";
 @import "blocks/feedback-form.css";

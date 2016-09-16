@@ -1,18 +1,25 @@
 .reason {
-  color: #ffffff;
+  color: $color-white;
   outline: red 1px solid;
+
   &--bg-blue {
-    background-color: #81b3d2;
+  padding: 0 45px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: $color-blue;
   }
   &--bg-gray {
-    background-color: #eeeeee;
-    color: #000000;
+  padding: 0 45px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: $color-gray;
+  color: $color-black;
   }
   &__text--light-black {
-    color: #333333;
+    color: $color-light-black;
   }
   &__number--light-black {
-    color: #333333;
+    color: $color-light-black;
   }
   &__item {
       outline: red 1px solid;
@@ -21,4 +28,22 @@
 .reason__title {
   font-size: 18px;
   line-height: 26px;
+  font-weight: 700;
+}
+.reason__number {
+  padding: 0 70px;
+  padding-bottom: 25px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.reason__text {
+  padding-bottom: 40px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.reason__item {
+  padding: 25px 0;
+  padding-left: 40px;
 }

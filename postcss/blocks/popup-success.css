@@ -1,0 +1,13 @@
+.popup-success__title {
+  font-size: 18px;
+  line-height: 26px;
+}
+.popup-success__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+.popup-success__btn {
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: $color-blue;
+}

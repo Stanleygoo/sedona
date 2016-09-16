@@ -1,17 +1,22 @@
+.menu {
+  outline: red 1px solid;
+}
 .menu__list {
+  padding-left: 72px;
+  padding-right: 45px;
   list-style: none;
 }
 .menu__item {
-    background-color: #81b3d2;
+  background-color: $color-blue;
 }
 .menu__link {
   font-size: 18px;
   line-height: 40px;
-  color: #ffffff;
+  color: $color-white;
   text-transform: uppercase;
   text-decoration: none;
 
 }
-.menu {
-  outline: red 1px solid;
+.menu__toggle {
+  display: none;
 }

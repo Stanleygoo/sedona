@@ -1,5 +1,10 @@
 .copyright {
+  padding-left: 75px;
   font-size: 14px;
   line-height: 26px;
+  font-weight: 400;
   outline: 1px  red solid;
+}
+.copyright__img {
+  padding-left: 10px;
 }

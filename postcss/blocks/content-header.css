@@ -1,13 +1,19 @@
+.content-header {
+  outline: red 1px solid;
+  padding-left: 20px;
+  padding-right: 15px;
+}
 .content-header__title {
+  margin-bottom: 42px;
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 42px;
+  font-weight: 700;
 }
 .content-header__text {
-  font-size: 14px;
-  line-height: 24px;
   margin-bottom: 40px;
-}
-.content-header {
-    outline: red 1px solid;
+  padding-bottom: 25px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $color-light-black;
 }
