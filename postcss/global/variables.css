@@ -1,5 +1,21 @@
-$color-blue: #81b3d2;
-$color-light-black: #333333;
-$color-black: #000000;
-$color-white: #ffffff;
-$color-gray: #eeeeee;
+$txt-color-headlines: #000000;
+$txt-general-primary: #000000;
+$txt-general-secondary: #ffffff;
+$txt-color-paragraphs: #333333;
+$txt-color-number: #333333;
+$txt-menu: #ffffff;
+$txt-secondary-reason: #ffffff;
+$txt-color-labels-primary: #333333;
+$txt-color-labels-secondary: #000000;
+$txt-color-inputs: #000000;
+$txt-color-legends: #000000;
+$txt-color-post-author: #333333;
+
+$bg-btn: #81b3d2;
+$bg-content-header: #ffffff;
+$bg-menu: #81b3d2;
+$bg-secondary-reason: #81b3d2;
+$bg-reason-primary: #eeeeee;
+$bg-inputs: #f2f2f2;
+$bg-txtarea: #f2f2f2;
+$bg-footer: #ffffff;

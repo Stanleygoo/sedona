@@ -6,20 +6,20 @@
   padding: 0 45px;
   padding-top: 40px;
   padding-bottom: 20px;
-  background-color: $color-blue;
+  background-color: $bg-secondary-reason;
   }
   &--bg-gray {
   padding: 0 45px;
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: $color-gray;
-  color: $color-black;
+  background-color: $bg-reason-primary;
+  color: $txt-general-primary;
   }
   &__text--light-black {
-    color: $color-light-black;
+    color: $txt-color-paragraphs;
   }
   &__number--light-black {
-    color: $color-light-black;
+    color: $txt-color-number;
   }
   &__item {
       outline: red 1px solid;
@@ -31,7 +31,7 @@
   font-weight: 700;
 }
 .reason__number {
-  padding: 0 70px;
+  padding: 0 70;
   padding-bottom: 25px;
   font-size: 14px;
   line-height: 21px;

@@ -8,6 +8,6 @@
 }
 .popup-success__btn {
   text-transform: uppercase;
-  color: $color-white;
-  background-color: $color-blue;
+  color: $txt-general-secondary;
+  background-color: $bg-btn;
 }

@@ -7,12 +7,13 @@
   list-style: none;
 }
 .menu__item {
-  background-color: $color-blue;
+  background-color: $bg-menu;
 }
 .menu__link {
   font-size: 18px;
   line-height: 40px;
-  color: $color-white;
+  font-weight: 700;
+  color: $txt-menu;
   text-transform: uppercase;
   text-decoration: none;
 

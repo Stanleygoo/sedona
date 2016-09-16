@@ -6,14 +6,14 @@
 }
 .post__title {
   font-weight: 700;
-  color: $color-black;
+  color: $txt-color-headlines;
 }
 .post__author {
   font-weight: 400;
-  color: $color-light-black;
+  color: $txt-color-post-author;
 }
 .post__like {
   font-weight: 700;
-  color: $color-black;
+  color: $txt-general-primary;
   text-decoration: none;
 }
