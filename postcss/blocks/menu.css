@@ -1,0 +1,25 @@
+.menu {
+  outline: red 1px solid;
+}
+.menu__list {
+  padding-left: 72px;
+  padding-right: 45px;
+
+  list-style: none;
+}
+.menu__item {
+  background-color: $bg-menu;
+}
+.menu__link {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  
+  color: $txt-menu;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+.menu__toggle {
+  display: none;
+}

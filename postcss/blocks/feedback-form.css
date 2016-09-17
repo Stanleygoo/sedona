@@ -1,0 +1,89 @@
+.feedback-form__input {
+  &--text {
+    margin-left: 20px;
+  }
+  &--radio {
+    margin-left: 20px;
+  }
+  &--checkbox {
+    margin-left: 20px;
+  }
+}
+
+.feedback-form__fieldset {
+  outline: 1px red solid;
+}
+.feedback-form__legend {
+  margin: 0 10px;
+  margin-bottom: 25px;
+  padding-top: 20px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  color: $txt-color-legend;
+}
+.feedback-form__input {
+  margin-bottom: 20px;
+  padding-left: 22px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  color: $txt-color-input;
+  background-color: $bg-feedback-form-primary;
+  text-transform: none;
+}
+.feedback-form__label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+
+  color: $txt-color-label-primary;
+}
+.feedback-form__label {
+  &--radio {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+
+    color: $txt-color-label-secondary;
+    text-transform: none;
+  }
+  &--checkbox {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+
+    color: $txt-color-label-secondary;
+    text-transform: none;
+  }
+}
+.feedback-form__textarea {
+  margin-bottom: 50px;
+  padding-left: 20px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  background-color: $bg-feedback-form-primary;
+  outline: 1px red solid;
+}
+.feedback-form__btn {
+  margin-bottom: 75px;
+  padding: 17px 45px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  
+  color: $txt-general-secondary;
+  background-color: $bg-btn;
+}
+.feedback-form__title {
+  margin-left: 35px;
+  margin-right: 30px;
+}
