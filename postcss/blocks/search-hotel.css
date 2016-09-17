@@ -1,33 +1,41 @@
 .search-hotel {
   margin-bottom: 50px;
+  
   outline: red 1px solid;
 
 }
 .search-hotel__title {
   padding: 0 35px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: $txt-color-headlines;
+
+  color: $txt-color-headline;
 }
 .search-hotel__text {
   padding: 0 10px;
   padding-bottom: 40px;
+
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: $txt-color-paragraphs;
+
+  color: $txt-color-paragraph;
 }
 
 .search-hotel__link {
   display: block;
+
   margin-bottom: 50px;
   padding: 15px 45px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+
   color: $txt-general-secondary;
-  text-decoration: none;
   background-color: $bg-btn;
+  text-decoration: none;
 }

@@ -4,6 +4,7 @@
 .menu__list {
   padding-left: 72px;
   padding-right: 45px;
+
   list-style: none;
 }
 .menu__item {
@@ -13,6 +14,7 @@
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
+  
   color: $txt-menu;
   text-transform: uppercase;
   text-decoration: none;
