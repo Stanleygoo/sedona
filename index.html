@@ -3,13 +3,17 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Sedona</title>
 </head>
 
 <body>
+  <div class="global-wrapper">
   <header class="page-header">
-    <nav class="menu">
+    <div class="page-header__wrapper">
+    <nav class="menu  menu--closed  menu--nojs">
+      <div class="menu__wrapper">
       <button class="menu__toggle" type="button">Открыть меню</button>
       <ul class="menu__list">
         <li class="menu__item  menu__item--active">
@@ -25,11 +29,13 @@
           <a class="menu__link" href="https://htmlacademy.ru/">Html Academy</a>
         </li>
       </ul>
+      </div>
     </nav>
     <div class="logo">
       <a href="#" class="logo__link">
-        <img class="logo__img" src="http://placehold.it/150x100" alt="logo" width="" height="">
+        <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="logo" width="" height="">
       </a>
+    </div>
     </div>
     <div class="intro">
       <img class="intro__img" src="http://placehold.it/150x100" alt="sedona : welcome to the gorgeous" width="" height="">
@@ -106,6 +112,23 @@
       </a>
     </p>
   </footer>
+  </div>
+  <script>
+    var navMain = document.querySelector('.menu');
+    var navToggle = document.querySelector('.menu__toggle');
+
+    navMain.classList.remove('menu--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('menu--closed')) {
+        navMain.classList.remove('menu--closed');
+        navMain.classList.add('menu--opened');
+      } else {
+        navMain.classList.add('menu--closed');
+        navMain.classList.remove('menu--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>
