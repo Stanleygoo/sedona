@@ -1,6 +1,10 @@
 .social-links {
   margin-bottom: 40px;
   padding-left: 65px;
-  
   outline: 1px solid red;
+  
+  @media (min-width: $tablet-width) {
+    float: left;
+    width: 155px;
+  }
 }

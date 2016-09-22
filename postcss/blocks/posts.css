@@ -1,0 +1,7 @@
+@media (min-width: $tablet-width) {
+  .posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+  }
+}

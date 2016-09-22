@@ -1,18 +1,19 @@
 .search-hotel {
   margin-bottom: 50px;
-  
-  outline: red 1px solid;
-
 }
+
 .search-hotel__title {
   padding: 0 35px;
 
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-
   color: $txt-color-headline;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
+
 .search-hotel__text {
   padding: 0 10px;
   padding-bottom: 40px;
@@ -22,20 +23,27 @@
   font-weight: 400;
 
   color: $txt-color-paragraph;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .search-hotel__link {
   display: block;
-
   margin-bottom: 50px;
   padding: 15px 45px;
 
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  
   text-align: center;
-
   color: $txt-general-secondary;
   background-color: $bg-btn;
   text-decoration: none;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin: 0 auto;
+    width: 460px;
+  }
 }

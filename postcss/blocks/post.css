@@ -1,24 +1,53 @@
 .post {
-  margin: 22px 0;
-
   font-size: 14px;
   line-height: 24px;
-
   outline: 1px solid red;
 }
+
 .post__title {
   font-weight: 700;
-
   color: $txt-color-headline;
 }
+
 .post__author {
   font-weight: 400;
-
   color: $txt-color-post-author;
 }
+
 .post__like {
   font-weight: 700;
-  
   color: $txt-general-primary;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .post:first-child {
+    width: 100%;
+  }
+  .post {
+    width: 50%;
+  }
+  .post__annotation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .post__like {
+    align-self: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post:first-child {
+    width: 100%;
+  }
+  .post {
+    width: 33.333%;
+  }
+  .post__annotation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .post__like {
+    align-self: center;
+  }
 }

@@ -1,12 +1,13 @@
 .page-header {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat #81b3d2;
-  z-index: 800;
+  z-index: 0;
 }
+
 .page-header__wrapper {
   background: $bg-primary;
   position: relative;
   @media (min-width: $tablet-width) {
-  background: none;
-  position: static;
+    background: none;
+    position: static;
   }
 }
