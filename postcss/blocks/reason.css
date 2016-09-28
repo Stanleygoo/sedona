@@ -37,7 +37,6 @@
   line-height: 26px;
   font-weight: 700;
 }
-
 .reason__number {
   padding: 0 70;
   padding-bottom: 25px;
@@ -55,13 +54,19 @@
   font-weight: 400;
 }
 
-.reason__item {
-  display: inline-block;
-  vertical-align: top;
-  width: 33%;
-}
 
+.reason__img {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 260px;
+}
 @media (min-width: $tablet-width) {
+  .reason__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+  }
   .reason__img {
     &--right {
       float: right;
@@ -92,6 +97,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reason__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+  }
   .reason__img {
     &--right {
       float: right;

@@ -11,10 +11,12 @@
   .reason-text--left {
     float: left;
     width: 256px;
+    box-sizing: border-box;
   }
   .reason-text--right {
     float: right;
     width: 256px;
+    box-sizing: border-box;
   }
 }
 
