@@ -19,6 +19,56 @@
     color: $txt-general-primary;
   }
 }
+.reason__about {
+  padding: 0 45px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  background-color: $bg-secondary-reason;
+  outline: red 1px solid;
+}
+
+@media (min-width: $tablet-width) {
+  .reason__about {
+    &--left {
+      float: left;
+      width: 256px;
+      height: 256px;
+      box-sizing: border-box;
+      padding-left: 50px;
+    }
+  &--right {
+    float: right;
+    width: 256px;
+    height: 256px;
+    padding: 0 45px;
+    box-sizing: border-box;
+  }
+}
+}
+
+@media (min-width: $desktop-width) {
+  .reason__about {
+    &--left {
+      width: 400px;
+      height: 256px;
+      padding: 0;
+      padding: 0 70px;
+
+      text-align: center;
+      padding-bottom: 3px;
+    }
+
+    &--right {
+      width: 400px;
+      height: 256px;
+      padding: 0;
+      padding: 0 90px;
+      margin: 0;
+      padding-bottom: 3px;
+    }
+  }
+}
 
 .reason__text--light-black {
   color: $txt-color-paragraph;

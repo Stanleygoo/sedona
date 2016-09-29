@@ -1,6 +1,8 @@
 .post {
   font-size: 14px;
   line-height: 24px;
+  padding-left: 20px;
+  box-sizing: border-box;
   outline: 1px solid red;
 }
 
@@ -23,16 +25,25 @@
 @media (min-width: $tablet-width) {
   .post:first-child {
     width: 100%;
+    padding-right: 20px;
   }
   .post {
     width: 50%;
+    padding-right: 30px;
   }
   .post__annotation {
     display: flex;
     justify-content: space-between;
+
+    color:$txt-general-secondary;
+    background: rgba(0, 0, 0, 0.3);
   }
   .post__like {
     align-self: center;
+    color:$txt-general-secondary;
+  }
+  .post__author {
+    color:$txt-general-secondary;
   }
 }
 
@@ -40,8 +51,9 @@
   .post:first-child {
     width: 100%;
   }
+
   .post {
-    width: 33.333%;
+    width: calc(100% /3) ;
   }
   .post__annotation {
     display: flex;

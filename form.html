@@ -44,7 +44,7 @@
       </div>
       <form class="feedback-form" action="/form" method="post">
         <div class="feedback-form__fieldset feedback-form__fieldset--right">
-          <h3 class="feedback-form__legend  feedback-form__legend--presentation">Предтавьтесь<span class="feedback-form__title-visibility-hidden">, пожалуйста</span>:</h3>
+          <h3 class="feedback-form__legend  feedback-form__legend--presentation">Предтавьтесь<span class="feedback-form__legend--visibility-hidden">, пожалуйста</span>:</h3>
           <div class="feedback-form__input-wrapper">
             <div class="feedback-form__presentation-wrapper">
               <label class="feedback-form__label  feedback-form__label--presentation" for="first-name">Имя:</label>
@@ -60,16 +60,17 @@
             </div>
           </div>
         </div>
-        <div class="feedback-form__fieldset feedback-form__fieldset--contacts">
-          <h3 class="feedback-form__legend  feedback-form__legend--contacts">Контактная информация</h3>
-          <div class="feedback-form__contacts-wrapper">
-            <div class="feedback-form__contacts-inside-wrapper">
-              <label class="feedback-form__label  feedback-form__label--contacts" for="tel"><span class="feedback-form__contacts-label-hidden">Контактный</span> телефон:</label>
-              <input class="feedback-form__input-contacts  feedback-form__input--tel" type="tel" id="tel" value="Введите телефон" name="telephone">
+        <div class="feedback-form__fieldset feedback-form__fieldset--wider">
+          <h3 class="feedback-form__legend  feedback-form__legend--flex">Контактная информация</h3>
+          <div class="feedback-form__external-wrapper">
+            <div class="feedback-form__error-msg">Ошибка, перепроверьте номер</div>
+            <div class="feedback-form__inside-wrapper">
+              <label class="feedback-form__label  feedback-form__label--icon" for="tel"><span class="feedback-form__tel-label-hidden">Контактный</span> телефон:</label>
+              <input class="feedback-form__input  feedback-form__input--icon  feedback-form__label--icon-tel" type="tel" id="tel" value="Введите телефон" name="telephone">
             </div>
-            <div class="feedback-form__contacts-inside-wrapper">
-              <label class="feedback-form__label  feedback-form__label--contacts" for="email">Электронная почта:</label>
-              <input class="feedback-form__input-contacts  feedback-form__input--email" type="email" id="email" value="Введите e-mail" name="email">
+            <div class="feedback-form__inside-wrapper">
+              <label class="feedback-form__label  feedback-form__label--icon" for="email">Электронная почта:</label>
+              <input class="feedback-form__input  feedback-form__input--icon  feedback-form__label--icon--email" type="email" id="email" value="Введите e-mail" name="email">
             </div>
           </div>
         </div>
