@@ -70,9 +70,7 @@
   }
 }
 
-.reason__text--light-black {
-  color: $txt-color-paragraph;
-}
+
 
 .reason__number--light-black {
   color: $txt-color-number;
@@ -83,25 +81,42 @@
 }
 
 .reason__title {
+
+  &--black {
+    color: $txt-color-headlines;
+    text-align: left;
+    padding-left: 50px;
+  }
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  text-align: center;
 }
 .reason__number {
-  padding: 0 70;
+  display: block;
   padding-bottom: 25px;
 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+
+  text-align: center;
 }
 
 .reason__text {
+  &--light-black {
+    color: $txt-color-paragraph;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
   padding-bottom: 40px;
 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+
+  text-align: center;
 }
 
 

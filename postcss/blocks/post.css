@@ -40,10 +40,10 @@
   }
   .post__like {
     align-self: center;
-    color:$txt-general-secondary;
+    color: $txt-general-secondary;
   }
   .post__author {
-    color:$txt-general-secondary;
+    color: $txt-general-secondary;
   }
 }
 
@@ -53,7 +53,7 @@
   }
 
   .post {
-    width: calc(100% /3) ;
+    width: (calc(100% / 3) ;
   }
   .post__annotation {
     display: flex;

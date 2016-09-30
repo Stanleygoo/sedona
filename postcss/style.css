@@ -3,7 +3,6 @@
 @import "global/mixins.css";
 @import "global/variables.css";
 @import "global/global-styles.css";
-@import "blocks/reason-text.css";
 @import "blocks/content-header.css";
 @import "blocks/copyright.css";
 @import "blocks/feedback-form.css";
