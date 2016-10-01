@@ -1,9 +1,8 @@
 .content-header {
   padding-left: 20px;
   padding-right: 15px;
-  
-  outline: red 1px solid;
 }
+
 .content-header__title {
   margin-bottom: 42px;
 
@@ -13,6 +12,7 @@
 
   color: $txt-color-headline;
 }
+
 .content-header__text {
   margin-bottom: 40px;
   padding-bottom: 25px;
@@ -22,4 +22,18 @@
   font-weight: 400;
 
   color: $txt-color-paragraph;
+}
+
+@media (min-width: 768px) {
+  .content-header {
+    margin: 0 auto;
+    width: 450px;
+    
+    text-align: center;
+  }
+  .content-header__title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
 }

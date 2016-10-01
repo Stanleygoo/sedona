@@ -1,11 +1,17 @@
+.popup-failure {
+  display: none;
+}
+
 .popup-failure__title {
   font-size: 18px;
   line-height: 26px;
 }
+
 .popup-failure__text {
   font-size: 14px;
   line-height: 24px;
 }
+
 .popup-failure__btn {
   color: $txt-general-secondary;
   background-color: $bg-btn;

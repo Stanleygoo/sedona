@@ -1,3 +1,33 @@
 .intro {
-  margin-bottom: 45px;
+  padding-bottom: 1px;
+}
+
+.intro {
+  display: flex;
+  height: 390px;
+  margin-bottom: 40px;
+  background-image:
+    url("../img/bg-intro-triangle-mobile.svg"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover, cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  text-align: center;
+}
+.intro__img {
+  margin: auto;
+}
+
+
+@media (min-width: 768px) {
+  .intro {
+    height: 520px;
+    background-image:
+      url("../img/bg-intro-triangle-mobile.svg"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    text-align: center;
+  }
 }

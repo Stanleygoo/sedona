@@ -1,6 +1,44 @@
+.video-player {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    width: 648px;
+    margin: 0 auto;
+  }
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
 .video-player__range-filter {
   background-color: #4d4746;
 }
+
 .video-player__play-bar {
   background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .video-player__play-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+  }
+  .video-player__on-subtitles {
+    align-self: center;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-player__play-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+  }
+  .video-player__on-subtitles {
+    align-self: center;
+    margin-left: auto;
+  }
 }

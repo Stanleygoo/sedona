@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 60px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .posts {
+    margin: 0 120px;
+  }
+}

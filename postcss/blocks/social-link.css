@@ -1,6 +1,12 @@
 .social-link {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background-color: #81b3d2;
+  line-height: 48px;
+  font-size: 0;
   padding-right: 5px;
-  
+
   color: $txt-general-primary;
   text-decoration: none;
 }

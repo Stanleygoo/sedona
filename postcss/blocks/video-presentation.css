@@ -1,28 +1,29 @@
 .video-presentation {
   margin-bottom: 80px;
-
-  outline: 1px solid red;
+  clear: both;
+  outline: 1px solid green;
 }
+
 .video-presentation__title {
   margin: 0 35px;
   padding: 35px 0;
-
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-
   color: $txt-color-headline;
-
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
+
 .video-presentation__text {
   margin: 0 20px;
   padding-bottom: 40px;
-
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  
   color: $txt-color-paragraph;
-
-
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
