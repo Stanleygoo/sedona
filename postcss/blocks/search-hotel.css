@@ -10,9 +10,6 @@
   line-height: 26px;
   font-weight: 700;
   color: $txt-color-headline;
-  @media (min-width: $tablet-width) {
-    text-align: center;
-  }
 }
 
 .search-hotel__text {
@@ -24,9 +21,6 @@
   font-weight: 400;
 
   color: $txt-color-paragraph;
-  @media (min-width: $tablet-width) {
-    text-align: center;
-  }
 }
 
 .search-hotel__link {
@@ -37,6 +31,11 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  text-align: center;
+  color: $txt-general-secondary;
+  background-color: $bg-btn;
+  text-decoration: none;
 
   &:hover {
     background-color: #669ec0;
@@ -51,12 +50,15 @@
   &:disabled {
     opacity: 0.3;
   }
-
-  text-align: center;
-  color: $txt-general-secondary;
-  background-color: $bg-btn;
-  text-decoration: none;
-  @media (min-width: $tablet-width) {
+}
+@media (min-width: $tablet-width) {
+  .search-hotel__title {
+    text-align: center;
+  }
+  .search-hotel__text {
+    text-align: center;
+  }
+  .search-hotel__link {
     text-align: center;
     margin: 0 auto;
     width: 460px;

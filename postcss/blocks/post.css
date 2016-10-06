@@ -1,49 +1,85 @@
 .post {
+  padding: 23px 0;
+
   font-size: 14px;
   line-height: 24px;
   padding-left: 20px;
-  box-sizing: border-box;
-  outline: 1px solid red;
-}
 
+  box-sizing: border-box;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
 .post__title {
   font-weight: 700;
   color: $txt-color-headline;
 }
-
 .post__author {
   font-weight: 400;
-  color: $txt-color-post-author;
-}
 
+  color: $txt-color-post-author;
+  text-transform: none;
+}
 .post__like {
   font-weight: 700;
+
   color: $txt-general-primary;
   text-decoration: none;
+  background: url("../img/icon-like.svg") no-repeat left;
+  padding-left: 35px;
 }
-
+.post__photo {
+  margin: 0;
+  padding: 0;
+}
 @media (min-width: $tablet-width) {
+  .post {
+    border-top: none;
+    border-bottom: none;
+  }
+  .post__photo {
+    height: 268px;
+
+    &--first {
+      height: 400px;
+    }
+  }
+  .post__img {
+    height: 268px;
+    width: 100%;
+
+    &--first {
+      height: 400px;
+    }
+  }
   .post:first-child {
     width: 100%;
-    padding-right: 20px;
   }
   .post {
     width: 50%;
-    padding-right: 30px;
+    padding: 0;
   }
   .post__annotation {
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
 
     color:$txt-general-secondary;
-    background: rgba(0, 0, 0, 0.3);
+    background: #f2f2f2;
+  }
+  .post__title {
+    margin-top: 20px;
+    margin-bottom: 15px;
   }
   .post__like {
     align-self: center;
-    color: $txt-general-secondary;
+    color: $txt-general-primary;
   }
   .post__author {
-    color: $txt-general-secondary;
+    color: #333333;
+    padding-bottom: 23px;
+  }
+  .post__description {
+    padding-bottom: 23px;
   }
 }
 
@@ -53,13 +89,33 @@
   }
 
   .post {
-    width: calc(100% / 3) ;
+    width: calc(100% / 3);
+     position: relative;
   }
   .post__annotation {
     display: flex;
     justify-content: space-between;
   }
+  .post__title {
+    color: $txt-general-secondary;
+  }
+  .post__author {
+    color: $txt-general-secondary;
+  }
   .post__like {
     align-self: center;
+    color: $txt-general-secondary;
+  }
+  .post__photo {
+    position: relative;
+  }
+  .post__annotation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+    color: $txt-general-secondary;
   }
 }

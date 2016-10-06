@@ -1,29 +1,47 @@
 .video-presentation {
-  margin-bottom: 80px;
-  clear: both;
-  outline: 1px solid green;
-}
+  position: relative;
 
+  margin-bottom: 80px;
+}
+.video-presentation__about {
+  padding: 0 25px;
+
+  text-align: center;
+}
 .video-presentation__title {
-  margin: 0 35px;
   padding: 35px 0;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  text-align: center;
   color: $txt-color-headline;
-  @media (min-width: $tablet-width) {
-    text-align: center;
-  }
 }
 
 .video-presentation__text {
-  margin: 0 20px;
+  margin: 0 40px;
   padding-bottom: 40px;
+
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+
+  text-align: center;
   color: $txt-color-paragraph;
-  @media (min-width: $tablet-width) {
-    text-align: center;
+}
+@media (min-width: $tablet-width) {
+  .video-presentation {
+    padding: 0 60px;
+  }
+  .video-presentation__about {
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .video-presentation__title {
+    font-size: 30px;
+    line-height: 30px;
   }
 }

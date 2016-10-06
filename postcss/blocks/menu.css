@@ -1,20 +1,14 @@
 .menu {
   width: auto;
-  min-height: 56px;
-
   text-align: center;
 }
 
 .menu__list {
   width: 100%;
   margin: 0;
-
   padding: 0;
-  font-size: 0;
 
-  @media (min-width: $tablet-width) {
-    text-align: center;
-  }
+  font-size: 0;
 }
 
 .menu__item {
@@ -28,38 +22,11 @@
   &:hover {
     background: #669ec0;
     color: $txt-general-secondary;
-    @media (min-width: $tablet-width) {
-      background: $bg-primary;
-      color: #81b3d2;
-    }
   }
 
   &:active {
     background: #5496bd;
     color: #88b6d1;
-
-    @media (min-width: $tablet-width) {
-      background: $bg-primary;
-    }
-  }
-  @media (min-width: $tablet-width) {
-    display: inline-block;
-    width: 20%;
-    padding-top: 15px;
-    padding-bottom: 10px;
-
-    background: $bg-primary;
-    border-bottom: none;
-    color: $txt-general-primary;
-    text-align: center;
-
-    &:nth-child(2) {
-      margin-right: 20%;
-    }
-  }
-  @media (min-width: $desktop-width) {
-    display: inline-block;
-    vertical-align: middle;
   }
 }
 
@@ -83,27 +50,9 @@
   &:active {
     color: #f2f2f2;
   }
-
-
-  @media (min-width: $tablet-width) {
-    color: $txt-general-primary;
-    font-size: 14px;
-    line-height: 26px;
-  }
-  &--active {
-     color: #766357;
-  }
-  &--active:hover {
-     color: #604e43;
-     cursor: context-menu;
-  }
-  &--active:active {
-    color: #f2f2f2;
-  }
 }
 
 @media (max-width: $mobile-width-only) {
-
   .menu__item {
     background-color: #81b3d2;
 
@@ -113,7 +62,6 @@
 
     &:active {
       background-color: #5496bd;
-
     }
   }
   .menu__link {
@@ -122,108 +70,75 @@
     &:hover {
       color: #ffffff;
     }
+
     &:active {
       color: #88b6d1;
     }
-    &--active {
-       color: #ffffff;
+  }
+  .menu__link--active {
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      cursor: context-menu;
     }
-    &--active:hover {
-       color: #ffffff;
-       cursor: context-menu;
-    }
-    &--active:active {
+
+    &:active {
       color: #ffffff;
     }
-  }
-
-  .menu--nojs .menu__toggle {
-    display: none;
-  }
-  .menu--nojs .menu__wrapper {
-    position: static;
-    height: auto;
-  }
-  .menu--nojs .menu__item {
-    display: block;
-  }
-  .menu__toggle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    display: block;
-    width: 70px;
-    height: 50px;
-
-    font-size: 0;
-
-    background-color: $bg-primary;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    &:hover {
-      background-color: $bg-primary;
-    }
-    &:active {
-      background-color: $bg-primary;
-    }
-  }
-  .menu--closed .menu__toggle::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 17px;
-    width: 36px;
-    height: 2px;
-
-    background-color: #678fa8;
-    box-shadow: 0 8px 0 0 #678fa8, 0 16px 0 0 #678fa8;
-  }
-  .menu__toggle {
-    top: auto;
-  }
-  .menu--closed .menu__toggle:active::before {
-    background-color: #678fa8;
-    box-shadow: 0 8px 0 0 #678fa8, 0 16px 0 0 #678fa8;
-  }
-  .menu--opened .menu__toggle {
-    top: -5px;
-    right: 0;
-    left: 250px;
-
-    background-color: transparent;
-    &::before, &::after {
-      content: "";
-      position: absolute;
-      top: 24px;
-      left: 18px;
-      width: 36px;
-      height: 2px;
-      background-color: rgba(255, 255, 255, 10);
-    }
-    &::before {
-      transform: rotate(45deg);
-      box-shadow: none;
-    }
-    &::after {
-      transform: rotate(-45deg);
-    }
-    &:active::before, &:active::after {
-      background-color: rgba(255, 255, 255, 10);
-    }
-  }
-  .menu--opened {
-    margin-bottom: 55px;
-  }
-  
-  .menu--closed .menu__item {
-    display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .menu__toggle {
-    display: none;
+  .menu__list {
+    text-align: center;
+  }
+  .menu__item {
+    display: inline-block;
+    width: 20%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    background: $bg-primary;
+    border-bottom: none;
+    color: $txt-general-primary;
+    text-align: center;
+
+    &:hover {
+      background: $bg-primary;
+      color: #81b3d2;
+    }
+
+    &:active {
+      background: $bg-primary;
+    }
+
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
+  }
+  .menu__link {
+    color: $txt-general-primary;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .menu__link--active {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+      cursor: context-menu;
+    }
+
+    &:active {
+      color: #f2f2f2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu__item {
+    display: inline-block;
+    vertical-align: middle;
   }
 }

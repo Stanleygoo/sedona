@@ -6,14 +6,16 @@
   font-weight: 400;
 
   color: $txt-general-primary;
-
-  @media (min-width: $tablet-width) {
-    width: 134px;
-    margin: 0;
-  }
 }
 
 .copyright__img {
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 134px;
+    margin: 0;
+  }
 }
