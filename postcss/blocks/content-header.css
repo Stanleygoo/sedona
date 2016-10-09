@@ -2,7 +2,6 @@
   padding-left: 20px;
   padding-right: 15px;
 }
-
 .content-header__title {
   margin-bottom: 42px;
 
@@ -10,6 +9,7 @@
   line-height: 26px;
   font-weight: 700;
 
+  text-align: center;
   color: $txt-color-headline;
 }
 
@@ -23,17 +23,17 @@
 
   color: $txt-color-paragraph;
 }
-
-@media (min-width: 768px) {
-  .content-header {
-    margin: 0 auto;
-    width: 450px;
-    
-    text-align: center;
-  }
   .content-header__title {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+  }
+  
+@media (min-width: $tablet-width) {
+  .content-header {
+    margin: 0 auto;
+    width: 450px;
+
+    text-align: center;
   }
 }
