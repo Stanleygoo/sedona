@@ -1,8 +1,8 @@
 .social-link {
   display: inline-block;
-  padding-right: 5px;
-  width: 46px;
-  height: 46px;
+  margin-right: 5px;
+  width: 48px;
+  height: 48px;
 
   line-height: 48px;
   font-size: 0;
@@ -10,16 +10,22 @@
   background-color: #81b3d2;
   color: $txt-general-primary;
   text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: center;
 
-  &--tw {
-    background-image: url("../img/icon-twitter.svg");
+  &:hover {
+    background-color: #669ec0;
   }
-  &--fb {
-    background-image: url("../img/icon-facebook.svg");
+
+  &:active {
+    background-color: #5496bd;
   }
-  &--youtube {
-    background-image: url("../img/icon-youtube.svg");
+}
+.social-link__svg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  fill: #ffffff;
+
+  &:active {
+    fill: #88b6d1;
   }
 }

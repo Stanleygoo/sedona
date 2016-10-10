@@ -28,7 +28,7 @@
     line-height: 26px;
     font-weight: 700;
   }
-  
+
 @media (min-width: $tablet-width) {
   .content-header {
     margin: 0 auto;

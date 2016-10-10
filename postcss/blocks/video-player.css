@@ -73,6 +73,14 @@
   cursor: pointer;
   background-color: transparent;
   fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  :active {
+    fill: #c1c1c1;
+  }
 }
 
 @media (min-width: $tablet-width) {

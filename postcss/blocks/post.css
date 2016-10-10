@@ -24,8 +24,10 @@
 
   color: $txt-general-primary;
   text-decoration: none;
-  background: url("../img/icon-like.svg") no-repeat left;
-  padding-left: 35px;
+}
+.post__svg {
+  fill: #b2b2b2;
+  transform: translate(-5px, 2px);
 }
 .post__photo {
   margin: 0;
@@ -35,6 +37,9 @@
   .post {
     border-top: none;
     border-bottom: none;
+  }
+  .post__svg {
+    fill: #a9a9a9;
   }
   .post__photo {
     height: 268px;
@@ -91,6 +96,9 @@
   .post {
     width: calc(100% / 3);
      position: relative;
+  }
+  .post__svg {
+    fill: $bg-primary;
   }
   .post__annotation {
     display: flex;
