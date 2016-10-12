@@ -40,7 +40,7 @@
    "*.js",
    "js/**/*.js",
    "img/**/*.svg",
-   "postcss/**/*.{css,css}"
+   "postcss/**/*.{css,pcss}"
   ],
   "engines": {
     "node": "6.5"

@@ -283,12 +283,27 @@
   line-height: 26px;
   font-weight: 700;
 
+  cursor: pointer;
   color: $txt-general-secondary;
   outline: 1px solid transparent;
   border: 0;
   background: $bg-btn;
   box-sizing: border-box;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #669ec0;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .form__footnote {
@@ -375,13 +390,14 @@
       order: -1;
       width: 50%;
       margin-bottom: 70px;
-      padding-top: 10px;
+      padding-top: 13px;
       border-right: 1px solid #dbdbdb;
     }
 
     &--right {
       width: 50%;
       padding-left: 55px;
+
     }
 
     &--wider {
@@ -436,6 +452,7 @@
   .feedback-form__legend--flex {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 29px;
 
 
     &::after, &::before {
@@ -500,7 +517,7 @@
     display: none;
   }
   .feedback-form__external-wrapper {
-    margin-bottom: 15px;
+    margin-bottom: 9px;
   }
   .feedback-form__checkbox-wrapper {
     display: flex;
@@ -528,7 +545,7 @@
     width: 50%;
     text-align: center;
   }
-  .form__footnote {
+  .feedback-form__footnote {
     display: block;
     padding-top: 6px;
   }
@@ -536,7 +553,7 @@
     margin-bottom: 22px;
   }
   .feedback-form__input-icon-wrapper::before {
-    right: 42px;
+    right: 60px;
   }
   .feedback-form__textarea {
     padding-top: 15px;
@@ -563,7 +580,7 @@
     }
   }
   .feedback-form__legend--flex {
-    margin-bottom: 34px;
+    margin-bottom: 37px;
   }
   .feedback-form__external-wrapper {
     display: flex;
@@ -638,5 +655,8 @@
     &::after, &::before {
       min-width: 225px;
     }
+  }
+  .feedback-form__external-wrapper {
+    margin-bottom: 12px;
   }
 }

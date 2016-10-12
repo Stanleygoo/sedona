@@ -42,6 +42,10 @@
   background: #fff;
   border-radius: 50%;
   transform: translate(35px);
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 .video-player__btn-wrapper {
   padding-top: 25px;

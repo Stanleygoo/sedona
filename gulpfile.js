@@ -16,7 +16,7 @@ var run = require("run-sequence");
 var del = require("del");
 
 gulp.task("style", function() {
-  gulp.src("css/style.css")
+  gulp.src("postcss/style.css")
     .pipe(plumber())
     .pipe(postcss([
      precss(),
@@ -31,11 +31,11 @@ gulp.task("style", function() {
         sort: false
       })
     ]))
-    .pipe(server.stream())
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("images", function() {
@@ -92,6 +92,6 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("postcss/**/*.{css,css}", ["style"]);
+  gulp.watch("postcss/**/*.css", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
 });
