@@ -232,9 +232,6 @@
     padding: 0;
   }
 }
-.reason__items {
-  font-size: 0;
-}
 .reason--bg-gray {
   display: inline-block;
   vertical-align: top;
@@ -346,9 +343,6 @@
       margin: 0;
       padding: 0;
     }
-  }
-  .reason__items {
-    font-size: 0;
   }
   .reason--bg-gray {
     display: inline-block;
