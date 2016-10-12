@@ -1,15 +1,29 @@
 .post {
-  padding: 23px 0;
+  position: relative;
+  padding-top: 34px;
+  padding-bottom: 8px;
 
-  font-size: 14px;
-  line-height: 24px;
-  padding-left: 20px;
-
-  box-sizing: border-box;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    background: #e5e5e5;
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+.post__annotation {
+  margin: 0;
 }
 .post__title {
+  margin: 0;
+  padding-top: 19px;
+
+  font-size: 14px;
   font-weight: 700;
   color: $txt-color-headline;
 }
@@ -20,26 +34,42 @@
   text-transform: none;
 }
 .post__like {
+  display: block;
+  margin-left: 10px;
+  padding-top: 5px;
+
+  line-height: 24px;
   font-weight: 700;
 
   color: $txt-general-primary;
   text-decoration: none;
-  background: url("../img/icon-like.svg") no-repeat left;
-  padding-left: 35px;
+}
+.post__svg {
+  fill: #b2b2b2;
+  transform: translate(-5px, 2px);
 }
 .post__photo {
   margin: 0;
   padding: 0;
+  height: 280px;
 }
 @media (min-width: $tablet-width) {
   .post {
-    border-top: none;
-    border-bottom: none;
+    position: relative;
+    padding: 0;
+
+  &::before {
+    display: none;
+  }
+}
+  .post__svg {
+    fill: #a9a9a9;
   }
   .post__photo {
     height: 268px;
 
     &--first {
+      padding-top: 20px;
       height: 400px;
     }
   }
@@ -67,19 +97,29 @@
     background: #f2f2f2;
   }
   .post__title {
-    margin-top: 20px;
-    margin-bottom: 15px;
+
+    margin-bottom: 3px;
   }
   .post__like {
+    padding-left: 0;
+    padding-right: 11px;
+    padding-top: 0;
     align-self: center;
     color: $txt-general-primary;
+
+    &--indent {
+      padding-right: 3px;
+    }
+    &--indent-biger {
+      padding-right: 17px;
+    }
   }
   .post__author {
     color: #333333;
     padding-bottom: 23px;
   }
   .post__description {
-    padding-bottom: 23px;
+    padding-bottom: 17px;
   }
 }
 
@@ -91,6 +131,9 @@
   .post {
     width: calc(100% / 3);
      position: relative;
+  }
+  .post__svg {
+    fill: $bg-primary;
   }
   .post__annotation {
     display: flex;
@@ -105,6 +148,13 @@
   .post__like {
     align-self: center;
     color: $txt-general-secondary;
+
+    &--indent {
+      padding-right: 3px;
+    }
+    &--indent-biger {
+      padding-right: 17px;
+    }
   }
   .post__photo {
     position: relative;

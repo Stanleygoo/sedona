@@ -11,9 +11,9 @@
 @import "blocks/toggle.css";
 @import "blocks/map.css";
 @import "blocks/menu.css";
+@import "blocks/reason-items.css";
 @import "blocks/page-footer.css";
 @import "blocks/page-header.css";
-@import "blocks/page-main.css";
 @import "blocks/popup-failure.css";
 @import "blocks/popup-success.css";
 @import "blocks/post.css";

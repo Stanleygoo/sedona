@@ -1,9 +1,18 @@
 .content-header {
   padding-left: 20px;
   padding-right: 15px;
+
+  &--inner {
+    padding-left: 20px;
+    padding-right: 1px;
+    text-align: center;
+  }
 }
 .content-header__title {
-  margin-bottom: 42px;
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0 10px;
+  padding-top: 5px;
 
   font-size: 18px;
   line-height: 26px;
@@ -11,11 +20,21 @@
 
   text-align: center;
   color: $txt-color-headline;
+
+  &--inner {
+    margin-bottom: 22px;
+    padding: 0;
+    padding-top: 5px;
+    padding-right: 23px;
+    padding-left: 10px;
+
+  }
 }
 
 .content-header__text {
-  margin-bottom: 40px;
-  padding-bottom: 25px;
+  margin: 0;
+  margin-bottom: 13px;
+  padding-left: 15px;
 
   font-size: 14px;
   line-height: 26px;
@@ -23,17 +42,70 @@
 
   color: $txt-color-paragraph;
 }
-  .content-header__title {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-  }
-  
+
 @media (min-width: $tablet-width) {
   .content-header {
     margin: 0 auto;
-    width: 450px;
 
     text-align: center;
+  }
+  .content-header__title {
+    margin-bottom: 32px;
+    padding: 0 108px;
+    padding-top: 16px;
+
+    font-size: 21px;
+
+    &--inner {
+      margin-bottom: 21px;
+      padding: 0;
+      padding-right: 32px;
+      padding-left: 13px;
+      font-size: 30px;
+      line-height: 26px;
+    }
+  }
+  .content-header__text {
+    padding: 0;
+    margin-bottom: 47px;
+
+    &--inner {
+      padding: 0 150px;
+      padding-top: 8px;
+      text-align: center;
+    }
+  }
+
+
+}
+@media (min-width: $desktop-width) {
+  .content-header {
+    padding-right: 10px;
+  }
+  .content-header__title {
+    padding: 0 288px;
+    padding-top: 15px;
+
+    text-align: center;
+    &--inner {
+      padding: 0;
+      padding-top: 4px;
+      padding-bottom: 2px;
+    }
+  }
+  .content-header__text {
+    padding-top: 0;
+    margin-bottom: 48px;
+
+    text-align: center;
+
+    &--inner {
+      padding: 0 367px;
+      padding-top: 4px;
+      margin-bottom: 51px;
+    }
+    &--inner-form {
+      margin-bottom: 35px;
+    }
   }
 }
