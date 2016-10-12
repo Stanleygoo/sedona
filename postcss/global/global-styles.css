@@ -27,6 +27,7 @@ body {
 .global-wrapper {
   width: 320px;
   margin: 0 auto;
+
   box-shadow: 0 -5px 9px 2px #dbdbdb;
 }
 
@@ -41,6 +42,21 @@ body {
   .global-wrapper {
     width: $desktop-width;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
-    background-color:  #ffffff;
+    background-color: #ffffff;
   }
+}
+
+input::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:-moz-placeholder {
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  opacity: 1;
+}
+input:-o-input-placeholder {
+  opacity: 1;
 }
