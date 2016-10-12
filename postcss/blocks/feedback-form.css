@@ -1,11 +1,18 @@
 .feedback-form__fieldset {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 25px;
   margin: 0;
 
   border: 0;
+  &--check {
+    padding-top: 25px;
+  }
+
+  &--btn {
+    padding-top: 11px;
+  }
 }
 
 .feedback-form__legend {
@@ -17,12 +24,17 @@
   font-weight: 700;
 
   text-align: center;
+
+  &--effect {
+    margin-bottom: 22px;
+    padding-top: 13px;
+  }
 }
 
 .feedback-form__presentation-wrapper {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   &:last-child {
     margin-bottom: 0;
@@ -57,7 +69,7 @@
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 
   &:last-child {
     margin-bottom: 0;
@@ -65,15 +77,18 @@
 }
 
 .feedback-form__error-msg {
+  padding-left: 22px;
+  padding-top: 2px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+
+  text-transform: none;
   color: #ff5c5c;
 }
 
 .feedback-form__label--icon {
   padding-left: 20px;
-  padding-bottom: 10px;
   font-size: 14px;
   line-height: 26px;
 }
@@ -81,6 +96,7 @@
 .feedback-form__input--icon {
   flex-grow: 1;
   padding: 17px 11px;
+  padding-left: 15px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -108,7 +124,7 @@
 }
 
 .feedback-form__inside-radio-wrapper {
-  margin-bottom: 24px;
+  margin-bottom: 7px;
   display: flex;
 
   &:last-child {
@@ -244,7 +260,8 @@
 .feedback-form__textarea {
   width: 100%;
   min-height: 160px;
-  padding: 20px;
+  padding: 5px;
+  padding-left: 22px;
 
   font-size: 18px;
   line-height: 26px;
@@ -283,12 +300,15 @@
   text-transform: uppercase;
   color: #333333;
 }
-
+.feedback-form__input-icon-wrapper--tel {
+  padding-top: 5px;
+  padding-left: 10px;
+}
 .feedback-form__input-icon-wrapper::before {
   position: absolute;
   content: "";
-  right: 21px;
   height: 60px;
+  right: 17px;
 }
 
 .feedback-form__input-icon-wrapper--tel::before {
@@ -303,6 +323,7 @@
 .feedback-form__input-icon-wrapper--email::before {
   width: 58px;
 
+
   background-image: url("../img/icon-mail.svg");
   background-color: #e6e6e6;
   background-repeat: no-repeat;
@@ -316,16 +337,20 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 0 60px;
-    padding-top: 30px;
   }
   .feedback-form__inside-wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 23px;
   }
   .feedback-form__input-icon-wrapper {
     order: 3;
     width: 629px;
+
+    &--email {
+      padding-top: 5px;
+    }
   }
   .feedback-form__label--icon {
     order: 1;
@@ -350,18 +375,18 @@
       order: -1;
       width: 50%;
       margin-bottom: 70px;
+      padding-top: 10px;
       border-right: 1px solid #dbdbdb;
     }
 
     &--right {
       width: 50%;
       padding-left: 55px;
-      margin-bottom: 70px;
     }
 
     &--wider {
       width: 100%;
-      margin-bottom: 55px;
+      margin-bottom: 40px;
     }
 
     &--check {
@@ -370,7 +395,7 @@
 
     &--textarea {
       width: 100%;
-      margin-bottom: 55px;
+      margin-bottom: 52px;
     }
 
     &--btn {
@@ -391,6 +416,8 @@
     }
 
     &--presentation {
+      padding-top: 23px;
+      padding-bottom: 33px;
       text-align: left;
     }
 
@@ -401,10 +428,15 @@
     &--emotion {
       margin-bottom: 60px;
     }
+    &--effect {
+      margin-bottom: 56px;
+      padding-top: 13px;
+    }
   }
   .feedback-form__legend--flex {
     display: flex;
     justify-content: space-between;
+
 
     &::after, &::before {
       content: "";
@@ -468,7 +500,7 @@
     display: none;
   }
   .feedback-form__external-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   .feedback-form__checkbox-wrapper {
     display: flex;
@@ -480,6 +512,14 @@
   .feedback-form__check-wrapper {
     width: 240px;
 
+    &:nth-child(4) {
+      order: 3;
+    }
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
     &:last-child {
       margin-bottom: 25px;
     }
@@ -490,22 +530,47 @@
   }
   .form__footnote {
     display: block;
+    padding-top: 6px;
   }
+  .feedback-form__inside-radio-wrapper {
+    margin-bottom: 22px;
+  }
+  .feedback-form__input-icon-wrapper::before {
+    right: 42px;
+  }
+  .feedback-form__textarea {
+    padding-top: 15px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
   .feedback-form {
     padding: 0 120px;
   }
-  .feedback-form__fieldset--right {
-    padding-left: 80px;
+  .feedback-form__fieldset {
+
+    &--right {
+      padding-left: 80px;
+    }
+
+    &--wider {
+      margin-bottom: 10px;
+    }
+
+    &--check {
+      margin-bottom: 37px;
+    }
   }
   .feedback-form__legend--flex {
-    margin-bottom: 60px;
+    margin-bottom: 34px;
   }
   .feedback-form__external-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+  .feedback-form__input-icon-wrapper {
+    width: 265px;
   }
   .feedback-form__inside-wrapper {
     flex-direction: row-reverse;
@@ -515,7 +580,7 @@
     box-sizing: border-box;
 
     &:nth-child(2n+1) {
-      padding-right: 80px;
+      padding-right: 60px;
     }
 
     &:last-child {
@@ -530,21 +595,22 @@
   }
   .feedback-form__error-msg {
     order: 1;
-    margin-right: 85px;
+    margin-right: 123px;
+    padding-top: 3px;
   }
   .feedback-form__input-icon-wrapper {
     order: 3;
     width: 315px;
-    
+
     &:last-child {
       margin-top: 30px;
     }
   }
   .feedback-form__input-icon-wrapper--email::before {
-    right: -58px;
+    right: -2px;
   }
   .feedback-form__input-icon-wrapper--tel::before {
-    right: 22px;
+    right: 75px;;
   }
   .feedback-form__label--margin {
     margin-top: 30px;
@@ -563,5 +629,14 @@
   }
   .feedback-form__legend--visibility-hidden {
     display: inline-block;
+  }
+  .feedback-form__input--icon {
+    width: 260px;
+  }
+  .feedback-form__legend--sight {
+
+    &::after, &::before {
+      min-width: 225px;
+    }
   }
 }

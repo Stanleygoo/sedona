@@ -8,7 +8,7 @@
   color: $txt-general-primary;
 }
 .copyright__logo-html {
-  transform: translate(10px, 10px);
+  transform: translate(5px, 15px);
 
   &:hover {
     fill: #81b3d2;
@@ -22,5 +22,16 @@
   .copyright {
     width: 134px;
     margin: 0;
+  }
+  .copyright__logo-html {
+    transform: translate(5px, 9px);
+  }
+}
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin: 0;
+  }
+  .copyright__logo-html {
+    transform: translate(11px, 13px);
   }
 }

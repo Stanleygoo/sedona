@@ -5,6 +5,7 @@
 
 .search-hotel__title {
   padding: 0 35px;
+  padding-top: 12px;
 
   font-size: 21px;
   line-height: 26px;
@@ -13,13 +14,15 @@
 }
 
 .search-hotel__text {
+  margin: 0;
+  margin-bottom: 7px;
   padding: 0 10px;
-  padding-bottom: 40px;
 
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
 
+  text-align: center;
   color: $txt-color-paragraph;
 }
 
@@ -52,15 +55,37 @@
   }
 }
 @media (min-width: $tablet-width) {
+  .search-hotel {
+    margin-bottom: 57px;
+  }
   .search-hotel__title {
+    padding-top: 20px;
+
+    font-size: 30px;
+    line-height: 26px;
+
     text-align: center;
   }
   .search-hotel__text {
+    padding: 0 165px;
+    padding-bottom: 35px;
     text-align: center;
   }
   .search-hotel__link {
     text-align: center;
     margin: 0 auto;
     width: 460px;
+  }
+  .search-hotel__link {
+    width: 368px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .search-hotel {
+    margin-bottom: 69px;
+  }
+  .search-hotel__text {
+    padding: 0 382px;
+    padding-bottom: 41px;
   }
 }
