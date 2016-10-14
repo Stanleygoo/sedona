@@ -12,6 +12,7 @@
   background-size: cover, cover;
   background-repeat: no-repeat;
   background-position: center, center;
+  background-color: #54616b;
   text-align: center;
 
   &--inner {
@@ -46,6 +47,7 @@
     background-size: 102%, cover;
     background-repeat: no-repeat;
     background-position: bottom, center;
+    background-color: #54616b;
     text-align: center;
 
     &--inner {

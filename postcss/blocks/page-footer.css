@@ -11,6 +11,11 @@
   font-weight: 700;
 
   color: $txt-general-primary;
+
+  &--form {
+    margin-bottom: 36px;
+    padding-top: 45px;
+  }
 }
 @media (min-width: $tablet-width) {
   .page-footer {

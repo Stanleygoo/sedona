@@ -97,7 +97,7 @@
 .feedback-form__input--icon {
   flex-grow: 1;
   padding: 17px 11px;
-  padding-left: 15px;
+  padding-left: 22px;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -312,19 +312,19 @@
 
   font-size: 14px;
   line-height: 26px;
+  font-weight: 400;
 
   text-transform: uppercase;
   color: #333333;
 }
 .feedback-form__input-icon-wrapper--tel {
   padding-top: 5px;
-  padding-left: 10px;
 }
 .feedback-form__input-icon-wrapper::before {
   position: absolute;
   content: "";
   height: 60px;
-  right: 17px;
+  right: 20px;
 }
 
 .feedback-form__input-icon-wrapper--tel::before {
@@ -338,7 +338,6 @@
 
 .feedback-form__input-icon-wrapper--email::before {
   width: 58px;
-
 
   background-image: url("../img/icon-mail.svg");
   background-color: #e6e6e6;
@@ -650,6 +649,7 @@
   }
   .feedback-form__legend--visibility-hidden {
     display: inline-block;
+    vertical-align: top;
   }
   .feedback-form__input--icon {
     width: 260px;
