@@ -6,7 +6,7 @@
 }
 .video-player__play-bar {
   position: absolute;
-  bottom: -51px;
+  bottom: -60px;
 
   padding-left: 20px;
   width: 280px;
@@ -48,7 +48,8 @@
   }
 }
 .video-player__btn-wrapper {
-  padding-top: 25px;
+  padding-top: 22px;
+  padding-bottom: 12px;
 
   background-color: #f2f2f2;
 
@@ -147,7 +148,7 @@
 
     padding-left: 0;
     width: 648px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
   }
   .video-player__img {

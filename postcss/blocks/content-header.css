@@ -27,7 +27,10 @@
     padding-top: 5px;
     padding-right: 23px;
     padding-left: 10px;
-
+  }
+  &--form {
+    margin-bottom: 24px;
+    padding-right: 13px;
   }
 }
 
@@ -41,6 +44,11 @@
   font-weight: 400;
 
   color: $txt-color-paragraph;
+
+  &--inner-form {
+    padding-left: 0px;
+    text-align: center;
+  }
 }
 
 @media (min-width: $tablet-width) {
