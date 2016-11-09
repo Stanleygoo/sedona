@@ -2,9 +2,10 @@
   position: absolute;
   top: auto;
   left: 50%;
+  z-index: 1;
+
   width: 102px;
   margin: 0 auto;
-  z-index: 1;
 
   transform: translate(-50%);
 }

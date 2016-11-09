@@ -91,9 +91,8 @@
       height: 122px;
     }
   }
-
-
 }
+
 @media (min-width: $desktop-width) and (min-resolution: 144dpi),
 (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
 

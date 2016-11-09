@@ -1,7 +1,8 @@
 .reason {
-  width: 100%;
-  box-sizing: border-box;
   position: relative;
+  box-sizing: border-box;
+
+  width: 100%;
 
   color: $txt-general-secondary;
 
@@ -9,6 +10,7 @@
     padding: 0 20px;
     padding-top: 5px;
     padding-bottom: 1px;
+
     background-color: $bg-reason-primary;
     color: $txt-general-primary;
   }
@@ -31,14 +33,12 @@
 }
 
 .reason__item {
-
   &--housing {
     background: url("../img/icon-house.svg") no-repeat;
     background-position : 20px 25px;
     background-size: 40px;
   }
   &--souvenirs {
-
     background: url("../img/icon-gift.svg") no-repeat;
     background-position : 21px 21px;
     background-size: 33px;
@@ -98,6 +98,10 @@
 .reason__text {
   margin: 0;
 
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+
   &--light-black {
     padding-top: 7px;
     padding-left: 67px;
@@ -115,11 +119,6 @@
   &--border-none {
     border-bottom: none;
   }
-
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-
 }
 .reason__img {
   margin: 0;
@@ -177,29 +176,33 @@
     padding-top: 23px;
     padding-left: 49px;
     padding-right: 45px;
+
     text-align: center;
   }
   .reason__number--light-black {
     padding-left: 20px;
     padding-right: 25px;
+
     text-align: center;
   }
   .reason__about {
     padding: 47px 20px;
 
     &--left {
+      box-sizing: border-box;
+
       float: left;
       width: 256px;
 
-      box-sizing: border-box;
       text-align: center;
     }
   &--right {
+    box-sizing: border-box;
+
     float: right;
     width: 256px;
     padding: 40px 20px;
 
-    box-sizing: border-box;
     text-align: center;
   }
 }
@@ -368,6 +371,4 @@
 
     }
   }
-
-
 }
