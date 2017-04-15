@@ -695,7 +695,7 @@ input:-o-input-placeholder {
     position: absolute;
     content: "";
     height: 60px;
-    right: 20px;
+    right: -5px;
 }
 .feedback-form__input-icon-wrapper--tel::before {
     width: 58px;
@@ -710,6 +710,9 @@ input:-o-input-placeholder {
     background-color: #e6e6e6;
     background-repeat: no-repeat;
     background-position: center;
+}
+.feedback-form__input-icon-wrapper {
+    position: relative;
 }
 .intro {
     z-index: 0;
@@ -768,10 +771,12 @@ input:-o-input-placeholder {
 .menu__item:hover {
     background: #669ec0;
     color: #ffffff;
+    transition: ease-in-out 0.25s;
 }
 .menu__item:active {
     background: #5496bd;
     color: #88b6d1;
+    transition: ease-in-out 0.25s;
 }
 .menu__link {
     display: block;
@@ -1458,7 +1463,7 @@ input:-o-input-placeholder {
         margin-bottom: 22px;
     }
     .feedback-form__input-icon-wrapper::before {
-        right: 60px;
+        right: -58px;
     }
     .feedback-form__textarea {
         padding-top: 15px;
@@ -1995,11 +2000,8 @@ input:-o-input-placeholder {
     .feedback-form__input-icon-wrapper:last-child {
         margin-top: 30px;
     }
-    .feedback-form__input-icon-wrapper--email::before {
-        right: -2px;
-    }
-    .feedback-form__input-icon-wrapper--tel::before {
-        right: 78px;
+    .feedback-form__input-icon-wrapper::before {
+        right: -3px;
     }
     .feedback-form__label--margin {
         margin-top: 30px;

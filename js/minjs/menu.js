@@ -1,0 +1,1 @@
+"use strict";!function(){function e(e){e.preventDefault(),n.classList.toggle("menu--visible"),r.classList.toggle("toggle--opened")}var t=document.querySelector(".page-header__wrapper"),r=document.querySelector(".toggle"),n=document.querySelector(".menu--visible");t&&t.classList.remove("page-header__wrapper--menu-nojs"),r.addEventListener("click",e)}();
