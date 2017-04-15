@@ -2,7 +2,7 @@
   "name": "126100-sedona",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Личный проект «Седона» от HTML Academy",
   "author": "Богдан Васкан",
   "repository": {
     "type": "git",
@@ -16,17 +16,18 @@
     "@htmlacademy/editorconfig-cli": "0.0.7",
     "autoprefixer": "6.4.1",
     "browser-sync": "2.15.0",
-    "gulp": "3.9.1",
-    "gulp-plumber": "1.1.0",
-    "gulp-postcss": "6.2.0",
-    "precss": "1.4.0",
     "css-mqpacker": "^5.0.1",
     "del": "^2.2.2",
+    "gulp": "3.9.1",
     "gulp-csso": "^2.0.0",
     "gulp-imagemin": "^3.0.3",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.0.0",
+    "gulp-uglify": "^2.1.2",
+    "precss": "1.4.0",
     "run-sequence": "^1.2.2"
   },
   "scripts": {
@@ -36,11 +37,11 @@
   },
   "editorconfig-cli": [
     "*.html",
-   "*.json",
-   "*.js",
-   "js/**/*.js",
-   "img/**/*.svg",
-   "postcss/**/*.{css,pcss}"
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "postcss/**/*.{css,pcss}"
   ],
   "engines": {
     "node": "6.5"

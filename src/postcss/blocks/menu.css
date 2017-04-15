@@ -22,11 +22,13 @@
   &:hover {
     background: #669ec0;
     color: $txt-general-secondary;
+    transition: ease-in-out 0.25s;
   }
 
   &:active {
     background: #5496bd;
     color: #88b6d1;
+    transition: ease-in-out 0.25s;
   }
 }
 

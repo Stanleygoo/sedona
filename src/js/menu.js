@@ -1,3 +1,5 @@
+'use strict';
+(function() {
 var navMain = document.querySelector('.page-header__wrapper');
 var navToggle = document.querySelector('.toggle');
 var menuToggle = document.querySelector('.menu--visible');
@@ -10,3 +12,4 @@ function toggle(e) {
   menuToggle.classList.toggle('menu--visible');
   navToggle.classList.toggle('toggle--opened');
 }
+})();
