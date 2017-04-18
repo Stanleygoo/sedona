@@ -835,6 +835,9 @@ input:-o-input-placeholder {
     box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
 }
+.popup-failure--show {
+    display: block;
+}
 .popup-failure__title {
     font-size: 18px;
     line-height: 26px;
@@ -870,6 +873,9 @@ input:-o-input-placeholder {
     text-align: center;
     box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
+}
+.popup-success--show {
+    display: block;
 }
 .popup-success__title {
     padding-top: 55px;
