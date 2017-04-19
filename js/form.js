@@ -1,5 +1,7 @@
 'use strict';
 
+(function () {
+
 var feedbackForm = document.querySelector('.feedback-form');
 var firstName = feedbackForm.querySelector('#first-name');
 var lastName = feedbackForm.querySelector('#last-name');
@@ -58,14 +60,14 @@ var popupShow = function(evt) {
 
   if (validValue) {
     popupFailure.classList.add('popup-failure--show');
+  } else {
+    popupSuccess.classList.add('popup-success--show');
 
     localStorage.setItem('firstName', firstName.value);
     localStorage.setItem('lastName', lastName.value);
     localStorage.setItem('patronymic', patronymic.value);
     localStorage.setItem('tel', tel.value);
     localStorage.setItem('feedbackFormMail', feedbackFormMail.value);
-  } else {
-    popupSuccess.classList.add('popup-success--show');
   }
 }
 
@@ -95,3 +97,4 @@ patronymic.maxLength = 15;
 
 tel.required = true;
 feedbackFormMail.required = true;
+})();
